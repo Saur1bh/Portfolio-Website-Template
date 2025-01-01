@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Saurabh Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+		.skill-mf .progress {
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+
+		.logo {
+			width: 240px;
+		}
+	</style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" /></a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/Saurabh.jpg);width: 50%;">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Saurabh Kumar</span></h1>
+								<span id="typing-animation"></span>
+								<script>
+									const typingAnimationElement = document.getElementById('typing-animation');
+									const typingTexts = [
+										'Web Application Developer  ',
+										'Custom Software Developer  ',
+										'Full Stack Developer   ',
+										'RESTful API Developer   ',
+										'Migrator and Upgrader   ',
+										'Consultant and Trainer   ',
+									];
+									function playTypingAnimation(text) {
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200);
+										}
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+									playTypingAnimation(typingTexts[0]);
+								</script>
+
+								<br>
+								<br>
+								<h2>A Senior Development Engineer</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/photos.jpg" class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Saurabh Kumar</span></p>
+											<p><span class="title-s">Job Role: </span> <span>Senior Development
+													Engineer</span></p>
+											<p><span class="title-s">Experience: </span> <span>5+ Years</span></p>
+											<p><span class="title-s">Address: </span> <span>Bihar, India</span></p>
+										</div>
+									</div>
+								</div>
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Angular, React</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>HTML and CSS</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Javascript, Typescript</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Node js</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Java, Python</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>MongoDB</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								<p>Experienced UI and Backend Developer with a proven track record of delivering robust
+									and efficient web
+									applications. Proficient in leveraging UI framework to
+									create dynamic and responsive user interfaces that enhance user
+									experience. Skilled in Backend development, adept at designing and
+									implementing scalable backend solutions to support complex
+									business logic. Adept at collaborating with cross-functional
+									teams to analyze requirements, architect solutions, and deliver
+									high quality software products. Passionate about staying updated with
+									the latest technologies and best practices in software
+									development to drive innovation and achieve business objectives.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Full Stack Developer</span></li>
+									<li class="d-flex"><span>Competency:</span> <span>Virtualization, UI, Networking
+											&amp; DevOps</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Git, Github, Bitbucket,
+											Scrubber, JIRA, CDET, Jenkins, vRO &amp; AWS</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Teaching &amp; Playing
+											chess ♟️</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/saurabh-kumar-427301171"
+										class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<p>Experienced UI and Backend Developer skilled in creating dynamic, responsive user interfaces and
+						scalable backend solutions. Proficient in collaborating with teams to deliver high-quality
+						software while staying updated on the latest technologies.</p>
+				</div>
+			</div>
+			<div class="row">
+				<h1 class="big-4">Experience</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<!-- <span class="date">2024-Present</span> -->
+						<h2>Senior Development Engineer</h2>
+						<span class="position">Calsoft</span>
+						<p class="mt-4">Calsoft is a leading technology-first partner, providing digital and product
+							engineering services. For over 25 years, Calsoft has been helping its customers solve their
+							business challenges using technologies in Storage, virtualization, networking, security,
+							cloud, AI/ML, IoT, and telecommunications domains.
+						<ul>
+							<li>Collaborated on multiple projects, leading frontend and backend development and ensuring
+								seamless UI/UX design.</li>
+							<li>Implemented responsive design principles to create user-friendly interfaces across
+								various devices.</li>
+							<li>Engaged in code reviews and mentoring junior developers, fostering a collaborative team
+								environment.</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<!-- <span class="date">2022-2024</span> -->
+						<h2>Development Engineer</h2>
+						<span class="position">Calsoft</span>
+						<p class="mt-4">Calsoft is a leading technology-first partner, providing digital and product
+							engineering services. For over 25 years, Calsoft has been helping its customers solve their
+							business challenges using technologies in Storage, virtualization, networking, security,
+							cloud, AI/ML, IoT, and telecommunications domains.
+						<ul>
+							<li>Results-driven software engineer in developing dynamic web applications using Angular,
+								React, JavaScript, TypeScript, HTML, CSS, Java, Python and Node.js. Adept at building
+								responsive UI/UX and optimizing performance in a range of projects. Seeking to leverage
+								technical
+								skills and expertise in modern web development to contribute to innovative, user-focused
+								solutions.
+							</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="" class="block-20 zoom-effect" style="background-image: url('images/work4.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">SkillSync</h3>
+							<p>Here's a sneak peek at how SkillSync can benefit our team:
+								🔍 **Knowledge Discovery:**
+								🤝 **Expert Matching:**
+								And the list goes on! With SkillSync, we're not just improving collaboration; we're
+								supercharging our productivity and empowering every team member to shine.
+								Ready to take our team's collaboration to the next level...</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="" class="block-20 zoom-effect" style="background-image: url('images/work2.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">Cisco UCS Manager vCenter Remote Plugin</h3>
+							<p>Cisco UCS vCenter integration plugin brings capabilities of UCS
+								Manager into vCenter and you can use your vCenter to manage all
+								your Cisco blades. The result is a single pane of glass for
+								VirtualCenter users to get both physical and virtual
+								infrastructure information for a given hypervisor.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="" class="block-20 zoom-effect" style="background-image: url('images/work3.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading">Cisco HyperFlex HTML Plugin for VMware vCenter</h3>
+							<p>The Cisco HyperFlex vCenter Plugin is integrated with the
+								vSphere Web Client and supports all of the HX Data Platform
+								post-installation management and monitoring functions. Access
+								the Cisco HyperFlex vCenter Plugin directly through the vSphere
+								Web Client Navigator.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row d-flex justify-content-center">
+				<h2>And many more... </h2>
+			</div>
+		</div>
+	</section>
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="15">0</strong>
+							<span>Achievements</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="12">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="87">0</strong>
+							<span>Mentored Students</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="92">0</strong>
+							<span>Cups of coffee</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github </span> </h2>
+					<div class="heading">
+						<h4>I love solving business problems by building end-to-end solutions and uncovering hidden data
+							insights.</h4>
+						<br>
+						<p><a href="https://github.com/Saur1bh" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Below are the details to reach out to me!</p>
+				</div>
+			</div>
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Bihar, India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://8404940598">+ 91 8404940598</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:cssaurabh9@gmail.com">cssaurabh9@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-linkedin"></span>
+						</div>
+						<h3 class="mb-4">Linkedin ID</h3>
+						<p><a href="#">saurabh-kumar-427301171</a></p>
+					</div>
+				</div>
+				<div class="container">
+					<br>
+					<div class="row justify-content-center">
+						<div class="col-md-7 ftco-animate text-center">
+							<h2>Have a<span> Question? </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77"
+									class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+						</div>
+					</div>
+					<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+						<li class="ftco-animate normal-txt">Find me on </li>
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/saurabh-kumar-427301171/"><span
+									class="icon-linkedin"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.facebook.com/S1urabh/"><span
+									class="icon-facebook"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.instagram.com/saurabh_nayak_1/"><span
+									class="icon-instagram"></span></a></li>
+					</ul>
+				</div>
+			</div>
+	</section>
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by Saurabh</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
